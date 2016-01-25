@@ -15,6 +15,7 @@
 		40A311531C56793A00A6DCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A311511C56793A00A6DCAC /* LaunchScreen.storyboard */; };
 		40A3115E1C56793A00A6DCAC /* CarFixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3115D1C56793A00A6DCAC /* CarFixTests.swift */; };
 		40A311691C56793A00A6DCAC /* CarFixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A311681C56793A00A6DCAC /* CarFixUITests.swift */; };
+		40A311781C5682ED00A6DCAC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A311771C5682ED00A6DCAC /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		40A311641C56793A00A6DCAC /* CarFixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarFixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A311681C56793A00A6DCAC /* CarFixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFixUITests.swift; sourceTree = "<group>"; };
 		40A3116A1C56793A00A6DCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A311771C5682ED00A6DCAC /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		40A311441C56793A00A6DCAC /* CarFix */ = {
 			isa = PBXGroup;
 			children = (
+				40A311761C5682B600A6DCAC /* Controller */,
 				40A311451C56793A00A6DCAC /* AppDelegate.swift */,
 				40A311471C56793A00A6DCAC /* ViewController.swift */,
 				40A311491C56793A00A6DCAC /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				40A3116A1C56793A00A6DCAC /* Info.plist */,
 			);
 			path = CarFixUITests;
+			sourceTree = "<group>";
+		};
+		40A311761C5682B600A6DCAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40A311771C5682ED00A6DCAC /* LoadingViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 				40A311481C56793A00A6DCAC /* ViewController.swift in Sources */,
 				40A311461C56793A00A6DCAC /* AppDelegate.swift in Sources */,
 				40A3114E1C56793A00A6DCAC /* CarFix.xcdatamodeld in Sources */,
+				40A311781C5682ED00A6DCAC /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
