@@ -17,6 +17,7 @@
 		40A311691C56793A00A6DCAC /* CarFixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A311681C56793A00A6DCAC /* CarFixUITests.swift */; };
 		40A311781C5682ED00A6DCAC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A311771C5682ED00A6DCAC /* LoadingViewController.swift */; };
 		40A3117A1C5690F700A6DCAC /* CreateUserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A311791C5690F700A6DCAC /* CreateUserProfileController.swift */; };
+		40A3117C1C574CD500A6DCAC /* ViewUserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3117B1C574CD500A6DCAC /* ViewUserProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		40A3116A1C56793A00A6DCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40A311771C5682ED00A6DCAC /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		40A311791C5690F700A6DCAC /* CreateUserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserProfileController.swift; sourceTree = "<group>"; };
+		40A3117B1C574CD500A6DCAC /* ViewUserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUserProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				40A311771C5682ED00A6DCAC /* LoadingViewController.swift */,
 				40A311791C5690F700A6DCAC /* CreateUserProfileController.swift */,
+				40A3117B1C574CD500A6DCAC /* ViewUserProfileController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				TargetAttributes = {
 					40A311411C56793A00A6DCAC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = K7TGLXM4C8;
 					};
 					40A311581C56793A00A6DCAC = {
 						CreatedOnToolsVersion = 7.2;
@@ -274,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40A311481C56793A00A6DCAC /* ViewController.swift in Sources */,
+				40A3117C1C574CD500A6DCAC /* ViewUserProfileController.swift in Sources */,
 				40A311461C56793A00A6DCAC /* AppDelegate.swift in Sources */,
 				40A3114E1C56793A00A6DCAC /* CarFix.xcdatamodeld in Sources */,
 				40A311781C5682ED00A6DCAC /* LoadingViewController.swift in Sources */,
@@ -419,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CarFix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = my.Carfix.CarFix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -430,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CarFix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = my.Carfix.CarFix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

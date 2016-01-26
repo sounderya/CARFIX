@@ -34,11 +34,8 @@
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" bounces="NO" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofs-Tw-yxr">
-                                <rect key="frame" x="35" y="67" width="531" height="1602"/>
+                                <rect key="frame" x="35" y="67" width="531" height="495"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1602" id="hes-wp-uFN"/>
-                                </constraints>
                                 <mutableString key="text">Personal information is any information relating to an identified or identifiable individual or company. We only collect personal information that is relevant to the conduct of our business by lawful means. We will inform clients why we are collecting personal information from them either before or at the time we collect it. Information collected will not be used for any other purpose without consent. When it is appropriate, we will collect personal information directly from clients and, when appropriate, either notify them or obtain consent before collecting personal information from other sources.
 
 Collection of personal information
@@ -74,11 +71,12 @@ We may provide links to other websites that we believe you will find useful. Oth
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ofs-Tw-yxr" firstAttribute="top" secondItem="Dj5-FR-lMF" secondAttribute="bottom" constant="23" id="3Kp-f6-Nlv"/>
-                            <constraint firstItem="Ofs-Tw-yxr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="8Xd-Fo-x9e"/>
+                            <constraint firstItem="Ofs-Tw-yxr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="CfO-0T-OBg"/>
                             <constraint firstItem="Dj5-FR-lMF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Jrd-cC-5wT"/>
-                            <constraint firstItem="Dj5-FR-lMF" firstAttribute="centerX" secondItem="Ofs-Tw-yxr" secondAttribute="centerX" id="V3H-Ut-jdy"/>
+                            <constraint firstItem="Ofs-Tw-yxr" firstAttribute="top" secondItem="Dj5-FR-lMF" secondAttribute="bottom" constant="23" id="QFm-kj-PLN"/>
+                            <constraint firstItem="Ofs-Tw-yxr" firstAttribute="centerX" secondItem="Dj5-FR-lMF" secondAttribute="centerX" id="YvD-gj-H7K"/>
                             <constraint firstItem="Dj5-FR-lMF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="deT-AC-HLe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ofs-Tw-yxr" secondAttribute="bottom" constant="38" id="erE-OO-OhK"/>
                             <constraint firstAttribute="trailing" secondItem="Dj5-FR-lMF" secondAttribute="trailing" id="wwJ-Ky-Nse"/>
                         </constraints>
                     </view>
@@ -99,29 +97,29 @@ We may provide links to other websites that we believe you will find useful. Oth
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using CarFix requires your location.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UV-S0-7Q2">
-                                <rect key="frame" x="204" y="438" width="193" height="49"/>
+                            <progressView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="750" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-QC-PgV">
+                                <rect key="frame" x="211" y="420" width="179" height="2"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="193" id="0IN-7i-yy4"/>
+                                    <constraint firstAttribute="width" constant="179" id="RdM-hF-PIr"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using CarFix requires your location.." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3UV-S0-7Q2">
+                                <rect key="frame" x="172" y="430" width="257" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="1Uc-9W-Ij6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="750" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-QC-PgV">
-                                <rect key="frame" x="211" y="420" width="179" height="2"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="179" id="1Ta-Ov-dUm"/>
-                                </constraints>
-                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3UV-S0-7Q2" firstAttribute="centerX" secondItem="YHb-wn-EUL" secondAttribute="centerX" id="3rV-hx-mXe"/>
-                            <constraint firstItem="3UV-S0-7Q2" firstAttribute="top" secondItem="TgY-QC-PgV" secondAttribute="bottom" constant="16" id="Rgy-g3-24u"/>
-                            <constraint firstItem="TgY-QC-PgV" firstAttribute="top" secondItem="wWW-Hf-17v" secondAttribute="bottom" constant="400" id="vFL-Iz-epj"/>
-                            <constraint firstItem="TgY-QC-PgV" firstAttribute="centerX" secondItem="3UV-S0-7Q2" secondAttribute="centerX" id="vT1-nm-7P2"/>
-                            <constraint firstItem="6YO-T7-KWf" firstAttribute="top" secondItem="3UV-S0-7Q2" secondAttribute="bottom" constant="113" id="w8D-pG-Rrx"/>
+                            <constraint firstItem="TgY-QC-PgV" firstAttribute="top" secondItem="wWW-Hf-17v" secondAttribute="bottom" constant="400" id="7X3-ke-2pd"/>
+                            <constraint firstItem="TgY-QC-PgV" firstAttribute="centerX" secondItem="YHb-wn-EUL" secondAttribute="centerX" id="PKC-wo-mbv"/>
+                            <constraint firstItem="6YO-T7-KWf" firstAttribute="top" secondItem="3UV-S0-7Q2" secondAttribute="bottom" constant="121" id="Zg1-dv-FJx"/>
+                            <constraint firstItem="3UV-S0-7Q2" firstAttribute="top" secondItem="TgY-QC-PgV" secondAttribute="bottom" constant="8" symbolic="YES" id="bFN-XF-Gti"/>
+                            <constraint firstItem="3UV-S0-7Q2" firstAttribute="centerX" secondItem="TgY-QC-PgV" secondAttribute="centerX" id="g7d-z2-dTf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -170,6 +168,9 @@ We may provide links to other websites that we believe you will find useful. Oth
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HSY-gj-ycK" id="HBl-a1-uLA"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your phone number to create a secured account" textAlignment="center" lineBreakMode="clip" numberOfLines="4" minimumScaleFactor="0.44999998807907104" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsM-4M-vCc">
                                 <rect key="frame" x="171" y="236" width="258" height="29"/>
@@ -231,7 +232,7 @@ We may provide links to other websites that we believe you will find useful. Oth
         <!--Enter  Code View Controller-->
         <scene sceneID="Nw8-Ne-0DA">
             <objects>
-                <viewController storyboardIdentifier="EnterPhoneCodeScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Ph-PZ-aS4" userLabel="Enter  Code View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EnterPhoneCodeScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Ph-PZ-aS4" userLabel="Enter  Code View Controller" customClass="ViewController" customModule="CarFix" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZGg-2W-YX9"/>
                         <viewControllerLayoutGuide type="bottom" id="DRo-YM-Myn"/>
@@ -487,17 +488,17 @@ We may provide links to other websites that we believe you will find useful. Oth
                         <sections>
                             <tableViewSection id="Coj-Hc-gAk">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="163" id="4iv-S3-7CU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="163" id="4iv-S3-7CU">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="163"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="4iv-S3-7CU" id="2Yu-br-8FW">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="162.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="162.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User-Profile-128" translatesAutoresizingMaskIntoConstraints="NO" id="zUf-Yn-l7K">
                                                     <rect key="frame" x="21" y="15" width="113" height="111"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQZ-KZ-3jd">
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQZ-KZ-3jd">
                                                     <rect key="frame" x="508" y="15" width="48" height="30"/>
                                                     <state key="normal" title="Logout"/>
                                                 </button>
@@ -524,11 +525,11 @@ We may provide links to other websites that we believe you will find useful. Oth
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="BWN-sY-jn7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="BWN-sY-jn7">
                                         <rect key="frame" x="0.0" y="163" width="600" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="BWN-sY-jn7" id="cMr-xw-UKe">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_about_us" translatesAutoresizingMaskIntoConstraints="NO" id="Vf1-by-FR3">
@@ -556,12 +557,15 @@ We may provide links to other websites that we believe you will find useful. Oth
                                                 <constraint firstItem="5Gb-hq-N6h" firstAttribute="centerY" secondItem="cMr-xw-UKe" secondAttribute="centerY" id="swX-4b-16d"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wLq-5v-5yo" kind="presentation" identifier="showDetail" modalPresentationStyle="formSheet" id="fa1-NO-hRZ"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="QGP-V9-3t8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="QGP-V9-3t8">
                                         <rect key="frame" x="0.0" y="225" width="600" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="QGP-V9-3t8" id="ghn-1D-NgK">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_nearby_workshop" translatesAutoresizingMaskIntoConstraints="NO" id="PL8-wU-yLS">
@@ -590,11 +594,11 @@ We may provide links to other websites that we believe you will find useful. Oth
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="dhX-Qh-9yP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="dhX-Qh-9yP">
                                         <rect key="frame" x="0.0" y="287" width="600" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dhX-Qh-9yP" id="SND-uy-pI5">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_home" translatesAutoresizingMaskIntoConstraints="NO" id="3iT-GS-EIS">
@@ -623,11 +627,11 @@ We may provide links to other websites that we believe you will find useful. Oth
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="f0J-Gu-het">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="f0J-Gu-het">
                                         <rect key="frame" x="0.0" y="349" width="600" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f0J-Gu-het" id="h0Z-ea-ro2">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_truck_check_in" translatesAutoresizingMaskIntoConstraints="NO" id="8rh-2m-tlt">
@@ -652,12 +656,15 @@ We may provide links to other websites that we believe you will find useful. Oth
                                                 <constraint firstItem="XoV-qQ-Xbj" firstAttribute="centerY" secondItem="8rh-2m-tlt" secondAttribute="centerY" id="xUI-w0-5DH"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="d9Y-uk-UiZ" kind="show" id="Z1j-Uq-TYX"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="uTa-GD-U5G">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="uTa-GD-U5G">
                                         <rect key="frame" x="0.0" y="411" width="600" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uTa-GD-U5G" id="nP3-hr-EFU">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_terms" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-37-d1I">
@@ -699,6 +706,179 @@ We may provide links to other websites that we believe you will find useful. Oth
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Mj-Zb-6Bu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3612" y="-258"/>
+        </scene>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="3MK-ue-EOa">
+            <objects>
+                <viewController id="hcJ-YG-Uzr" userLabel="Edit Profile View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="haS-pu-c2s"/>
+                        <viewControllerLayoutGuide type="bottom" id="bx7-qJ-d7G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F4X-2g-xVM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uuk-os-PHi">
+                                <rect key="frame" x="202" y="278" width="197" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cu9-uj-aFb">
+                                <rect key="frame" x="202" y="327" width="195" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="erD-0t-ftI">
+                                <rect key="frame" x="202" y="370" width="197" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2v-TX-TLs">
+                                <rect key="frame" x="257" y="513" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Existing Vehicles" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k5N-bf-guS">
+                                <rect key="frame" x="202" y="460" width="148" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="D0o-Av-01n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eny-UP-HcF">
+                                <rect key="frame" x="369" y="460" width="30" height="30"/>
+                                <state key="normal" title="Edit"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DGO-ek-0SC">
+                                <rect key="frame" x="202" y="415" width="197" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBi-dX-Xw4">
+                                <rect key="frame" x="202" y="498" width="82" height="30"/>
+                                <state key="normal" title="Add Vehicle"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kow-A3-pT3">
+                                <rect key="frame" x="226" y="109" width="147" height="147"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="ffD-GZ-Jyt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="erD-0t-ftI" firstAttribute="trailing" secondItem="DGO-ek-0SC" secondAttribute="trailing" id="0hb-Ai-Z2v"/>
+                            <constraint firstItem="DGO-ek-0SC" firstAttribute="top" secondItem="erD-0t-ftI" secondAttribute="bottom" constant="15" id="AvU-th-MST"/>
+                            <constraint firstItem="bx7-qJ-d7G" firstAttribute="top" secondItem="zBi-dX-Xw4" secondAttribute="bottom" constant="72" id="BJD-bz-AGH"/>
+                            <constraint firstItem="eny-UP-HcF" firstAttribute="leading" secondItem="k5N-bf-guS" secondAttribute="trailing" constant="19" id="Dhp-kw-EEz"/>
+                            <constraint firstItem="Cu9-uj-aFb" firstAttribute="centerX" secondItem="F4X-2g-xVM" secondAttribute="centerX" id="EDE-va-nMJ"/>
+                            <constraint firstItem="k5N-bf-guS" firstAttribute="leading" secondItem="zBi-dX-Xw4" secondAttribute="leading" id="Q09-th-onn"/>
+                            <constraint firstItem="Kow-A3-pT3" firstAttribute="top" secondItem="haS-pu-c2s" secondAttribute="bottom" constant="45" id="QCB-eI-Knd"/>
+                            <constraint firstItem="k5N-bf-guS" firstAttribute="top" secondItem="eny-UP-HcF" secondAttribute="top" id="W75-gk-ry4"/>
+                            <constraint firstItem="uuk-os-PHi" firstAttribute="centerX" secondItem="F4X-2g-xVM" secondAttribute="centerX" id="Wo0-b9-ctZ"/>
+                            <constraint firstItem="uuk-os-PHi" firstAttribute="leading" secondItem="Cu9-uj-aFb" secondAttribute="leading" id="XWv-fn-mRd"/>
+                            <constraint firstItem="Cu9-uj-aFb" firstAttribute="top" secondItem="uuk-os-PHi" secondAttribute="bottom" constant="19" id="XyN-9a-SWf"/>
+                            <constraint firstItem="zBi-dX-Xw4" firstAttribute="centerY" secondItem="B2v-TX-TLs" secondAttribute="centerY" id="ZBd-UC-eDe"/>
+                            <constraint firstItem="uuk-os-PHi" firstAttribute="trailing" secondItem="erD-0t-ftI" secondAttribute="trailing" id="aWr-aq-6tR"/>
+                            <constraint firstItem="k5N-bf-guS" firstAttribute="top" secondItem="DGO-ek-0SC" secondAttribute="bottom" constant="15" id="cdT-Dk-yEw"/>
+                            <constraint firstItem="zBi-dX-Xw4" firstAttribute="top" secondItem="k5N-bf-guS" secondAttribute="bottom" constant="8" symbolic="YES" id="f2g-3F-10D"/>
+                            <constraint firstItem="erD-0t-ftI" firstAttribute="top" secondItem="Cu9-uj-aFb" secondAttribute="bottom" constant="13" id="ido-zi-qxj"/>
+                            <constraint firstItem="uuk-os-PHi" firstAttribute="top" secondItem="Kow-A3-pT3" secondAttribute="bottom" constant="22" id="k5R-Bz-eYq"/>
+                            <constraint firstItem="Kow-A3-pT3" firstAttribute="centerX" secondItem="Cu9-uj-aFb" secondAttribute="centerX" id="pQm-1r-TUS"/>
+                            <constraint firstItem="erD-0t-ftI" firstAttribute="leading" secondItem="Cu9-uj-aFb" secondAttribute="leading" id="pho-Q0-JVd"/>
+                            <constraint firstItem="DGO-ek-0SC" firstAttribute="leading" secondItem="k5N-bf-guS" secondAttribute="leading" id="vs3-35-KvG"/>
+                            <constraint firstItem="DGO-ek-0SC" firstAttribute="trailing" secondItem="eny-UP-HcF" secondAttribute="trailing" id="vtT-8t-kAc"/>
+                            <constraint firstItem="B2v-TX-TLs" firstAttribute="leading" secondItem="F4X-2g-xVM" secondAttribute="leading" constant="257" id="z8L-bY-H6d"/>
+                            <constraint firstItem="erD-0t-ftI" firstAttribute="leading" secondItem="DGO-ek-0SC" secondAttribute="leading" id="ziv-YX-teZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xnz-yJ-Ww0">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="XSg-rS-v95"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9a-L7-j1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5217" y="-399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4TI-G3-7H2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wLq-5v-5yo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="23w-GL-uFv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hcJ-YG-Uzr" kind="relationship" relationship="rootViewController" id="6Xr-kV-JKx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfu-Gr-LBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4405" y="-399"/>
+        </scene>
+        <!--About CarFix View Controller-->
+        <scene sceneID="Qg3-qT-S1p">
+            <objects>
+                <viewController storyboardIdentifier="AboutCarFIx" id="d9Y-uk-UiZ" userLabel="About CarFix View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wgK-Wr-P8r"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ixo-8p-Gyl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DvY-3M-X1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S7r-FF-he7">
+                                <rect key="frame" x="32" y="20" width="548" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" header="YES"/>
+                                </accessibility>
+                                <mutableString key="text">Break downs are inevitable most of the time. We have a 24/7 operating call centre catering to your distress call at any hour of the day. With Carfix as its new addition, our usability is enhanced, making it more advance and user friendly.
+
+Carfix took approximately six months to complete. In such a short period of time, our in-house developers created the webpage from scratch. With an application for both Apple and Android users, break downs will be less nerve-wrecking for all users.
+
+The system will locate the whereabouts the moment one access the app or website. The need to key in too many information is not necessary. Besides the location of the breakdown, Carfix can also show the call agents on the whereabouts of the nearest tow truck and workshop. This saves time and cost as the agents will not have to contact all the nearby workshops blindly to arrange services.
+
+Besides being convenient for all, it benefits those who are not familiar on the street. The distress does not have to waste time explaining their whereabouts and providing the address. All the hassle and inconvenience of getting the wrong address or tow trucks losing their way will be prevented.
+
+Workshops are required to update their rider’s information onto their profile. We will then inform the distress about the rider we are sending alongside the picture. This measure taken is to ensure your safety, avoiding unnecessary predicament.
+
+Benefits of using Carfix
+
+1. To check your No Claim Discount (NCD)
+2. To check your past and current insurer details from I-Search
+3. To check the history of used vehicles
+4. To check the estimated market value for your car
+5. ToBatteries at lower than market price
+6. Many more benefits coming soon…
+Adding to the list of services, these features are provided to the consumers for free. You are able to check your no claim discount, insurance details, vehicle history and other available information that are very helpful when it comes to situations such as accidents, buying and selling cars.
+
+Carfix prioritizes efficiency, reliability, and your safety when you are in need. So what more are you looking for?
+
+Interested parties looking for collaboration opportunities can contact us as we can also programme Carfix to do a tie-in with respected call centres of Insurance companies.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ixo-8p-Gyl" firstAttribute="top" secondItem="S7r-FF-he7" secondAttribute="bottom" constant="12" id="GF5-Nc-bxr"/>
+                            <constraint firstItem="S7r-FF-he7" firstAttribute="trailing" secondItem="DvY-3M-X1Y" secondAttribute="trailingMargin" id="Mtu-ry-LmD"/>
+                            <constraint firstItem="S7r-FF-he7" firstAttribute="top" secondItem="wgK-Wr-P8r" secondAttribute="bottom" id="TU0-3F-iVC"/>
+                            <constraint firstItem="S7r-FF-he7" firstAttribute="leading" secondItem="DvY-3M-X1Y" secondAttribute="leadingMargin" constant="12" id="kNM-CX-7TP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rkr-Xu-cZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4405" y="293"/>
         </scene>
     </scenes>
     <resources>
