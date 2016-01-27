@@ -436,7 +436,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxI-yw-zcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3359" y="571"/>
+            <point key="canvasLocation" x="3495" y="331"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8bG-ei-fcN">
@@ -456,7 +456,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQQ-hm-Lxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3035" y="1420"/>
+            <point key="canvasLocation" x="2593" y="1164"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="34L-oQ-HAr">
@@ -657,7 +657,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="d9Y-uk-UiZ" kind="show" id="Z1j-Uq-TYX"/>
+                                            <segue destination="LJz-AE-SnD" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="Z1j-Uq-TYX"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="uTa-GD-U5G">
@@ -705,7 +705,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Mj-Zb-6Bu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3612" y="-258"/>
+            <point key="canvasLocation" x="2540" y="-1506"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="3MK-ue-EOa">
@@ -798,11 +798,16 @@ We may provide links to other websites that we believe you will find useful. Oth
                     </view>
                     <navigationItem key="navigationItem" id="Xnz-yJ-Ww0">
                         <barButtonItem key="backBarButtonItem" title="Back" id="XSg-rS-v95"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="SYT-dt-a2b">
+                            <connections>
+                                <segue destination="Ybh-j2-Ze3" kind="presentation" modalTransitionStyle="crossDissolve" id="3Pk-29-hk6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9a-L7-j1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5217" y="-399"/>
+            <point key="canvasLocation" x="4145" y="-1647"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4TI-G3-7H2">
@@ -820,7 +825,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfu-Gr-LBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4405" y="-399"/>
+            <point key="canvasLocation" x="3333" y="-1647"/>
         </scene>
         <!--About CarFix View Controller-->
         <scene sceneID="Qg3-qT-S1p">
@@ -834,7 +839,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S7r-FF-he7">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S7r-FF-he7">
                                 <rect key="frame" x="32" y="20" width="548" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -875,10 +880,35 @@ Interested parties looking for collaboration opportunities can contact us as we 
                             <constraint firstItem="S7r-FF-he7" firstAttribute="leading" secondItem="DvY-3M-X1Y" secondAttribute="leadingMargin" constant="12" id="kNM-CX-7TP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sf1-si-hnC">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="OzU-i5-Sg9" userLabel="Back">
+                            <connections>
+                                <segue destination="Ybh-j2-Ze3" kind="presentation" modalTransitionStyle="crossDissolve" id="xaW-6H-GZx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rkr-Xu-cZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4405" y="293"/>
+            <point key="canvasLocation" x="4145" y="-955"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wcg-AW-P5V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJz-AE-SnD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MBz-1R-MeF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="d9Y-uk-UiZ" kind="relationship" relationship="rootViewController" id="EFv-Jp-BOk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9g-Ih-b7L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3333" y="-955"/>
         </scene>
     </scenes>
     <resources>
@@ -889,4 +919,7 @@ Interested parties looking for collaboration opportunities can contact us as we 
         <image name="ic_terms" width="512" height="512"/>
         <image name="ic_truck_check_in" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xaW-6H-GZx"/>
+    </inferredMetricsTieBreakers>
 </document>
