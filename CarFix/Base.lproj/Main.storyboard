@@ -1570,6 +1570,9 @@ We may provide links to other websites that we believe you will find useful. Oth
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBi-dX-Xw4">
                                 <rect key="frame" x="202" y="454" width="82" height="30"/>
                                 <state key="normal" title="Add Vehicle"/>
+                                <connections>
+                                    <segue destination="FSR-1q-aMh" kind="presentation" modalTransitionStyle="crossDissolve" id="74b-bq-HE9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1605,6 +1608,80 @@ We may provide links to other websites that we believe you will find useful. Oth
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9a-L7-j1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5565" y="-2415"/>
+        </scene>
+        <!--Add New Vehicle-->
+        <scene sceneID="1eu-fG-ww4">
+            <objects>
+                <viewController id="wpu-og-Ry5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XV1-L0-GE4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pud-fJ-65L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Fs-Ui-bzD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vehicle Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0E-hj-GS6">
+                                <rect key="frame" x="159" y="129" width="122" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="5Te-CK-PiW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jy3-Ex-j9R">
+                                <rect key="frame" x="344" y="125" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="8Im-9N-Bic"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Model " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFR-HB-imd">
+                                <rect key="frame" x="229" y="185" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zK4-XL-TOY">
+                                <rect key="frame" x="344" y="181" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvP-R4-slC">
+                                <rect key="frame" x="291" y="275" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zK4-XL-TOY" firstAttribute="trailing" secondItem="jy3-Ex-j9R" secondAttribute="trailing" id="0m2-ma-QQl"/>
+                            <constraint firstItem="q0E-hj-GS6" firstAttribute="top" secondItem="XV1-L0-GE4" secondAttribute="bottom" constant="109" id="7Ng-l9-E3a"/>
+                            <constraint firstItem="q0E-hj-GS6" firstAttribute="trailing" secondItem="NFR-HB-imd" secondAttribute="trailing" id="O0I-PG-cZJ"/>
+                            <constraint firstItem="jy3-Ex-j9R" firstAttribute="leading" secondItem="q0E-hj-GS6" secondAttribute="trailing" constant="63" id="TzT-O0-Uwn"/>
+                            <constraint firstItem="zK4-XL-TOY" firstAttribute="top" secondItem="jy3-Ex-j9R" secondAttribute="bottom" constant="26" id="dug-nj-BvA"/>
+                            <constraint firstItem="kvP-R4-slC" firstAttribute="top" secondItem="XV1-L0-GE4" secondAttribute="bottom" constant="255" id="isZ-KZ-IqX"/>
+                            <constraint firstItem="NFR-HB-imd" firstAttribute="top" secondItem="q0E-hj-GS6" secondAttribute="bottom" constant="35" id="j1U-hk-8Ae"/>
+                            <constraint firstItem="zK4-XL-TOY" firstAttribute="leading" secondItem="jy3-Ex-j9R" secondAttribute="leading" id="lUq-28-yYn"/>
+                            <constraint firstItem="jy3-Ex-j9R" firstAttribute="centerY" secondItem="q0E-hj-GS6" secondAttribute="centerY" id="nke-qd-Xn6"/>
+                            <constraint firstItem="kvP-R4-slC" firstAttribute="leading" secondItem="1Fs-Ui-bzD" secondAttribute="leading" constant="291" id="nrI-QW-42A"/>
+                            <constraint firstItem="q0E-hj-GS6" firstAttribute="leading" secondItem="1Fs-Ui-bzD" secondAttribute="leading" constant="159" id="qL0-HF-oMh"/>
+                            <constraint firstItem="jy3-Ex-j9R" firstAttribute="top" secondItem="XV1-L0-GE4" secondAttribute="bottom" constant="105" id="xxb-eJ-hjB"/>
+                            <constraint firstItem="zK4-XL-TOY" firstAttribute="centerY" secondItem="NFR-HB-imd" secondAttribute="centerY" id="ydz-Oj-YSk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add New Vehicle" id="pMr-ja-8qe">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="AtQ-iU-3zS">
+                            <connections>
+                                <segue destination="hcJ-YG-Uzr" kind="presentation" modalTransitionStyle="crossDissolve" id="p7Z-Kk-fPy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5h-LB-ik5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7093" y="-2403"/>
         </scene>
         <!--Terms and Conditions-->
         <scene sceneID="Tlc-vr-73o">
@@ -2058,6 +2135,24 @@ The agreement relating to your use of the services and supersedes any prior or c
             </objects>
             <point key="canvasLocation" x="4639" y="3893"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ytv-4b-jio">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FSR-1q-aMh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Paw-7J-t9t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wpu-og-Ry5" kind="relationship" relationship="rootViewController" id="wgj-DR-CjG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYx-Ei-CUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6281" y="-2403"/>
+        </scene>
     </scenes>
     <resources>
         <image name="User-Profile-128" width="128" height="128"/>
@@ -2069,6 +2164,7 @@ The agreement relating to your use of the services and supersedes any prior or c
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NHD-IQ-4Di"/>
-        <segue reference="xaW-6H-GZx"/>
+        <segue reference="3Pk-29-hk6"/>
+        <segue reference="p7Z-Kk-fPy"/>
     </inferredMetricsTieBreakers>
 </document>
