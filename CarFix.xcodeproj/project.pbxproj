@@ -19,7 +19,6 @@
 		40A3117A1C5690F700A6DCAC /* CreateUserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A311791C5690F700A6DCAC /* CreateUserProfileController.swift */; };
 		40A3117C1C574CD500A6DCAC /* ViewUserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3117B1C574CD500A6DCAC /* ViewUserProfileController.swift */; };
 		40A3117F1C59951D00A6DCAC /* UserCaseUpdateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3117E1C59951D00A6DCAC /* UserCaseUpdateTableViewController.swift */; };
-		40A311811C59B88E00A6DCAC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A311801C59B88E00A6DCAC /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +57,6 @@
 		40A311791C5690F700A6DCAC /* CreateUserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserProfileController.swift; sourceTree = "<group>"; };
 		40A3117B1C574CD500A6DCAC /* ViewUserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUserProfileController.swift; sourceTree = "<group>"; };
 		40A3117E1C59951D00A6DCAC /* UserCaseUpdateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCaseUpdateTableViewController.swift; sourceTree = "<group>"; };
-		40A311801C59B88E00A6DCAC /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +115,6 @@
 				40A311511C56793A00A6DCAC /* LaunchScreen.storyboard */,
 				40A311541C56793A00A6DCAC /* Info.plist */,
 				40A3114C1C56793A00A6DCAC /* CarFix.xcdatamodeld */,
-				40A311801C59B88E00A6DCAC /* TableViewController.swift */,
 			);
 			path = CarFix;
 			sourceTree = "<group>";
@@ -286,7 +283,6 @@
 				40A311481C56793A00A6DCAC /* ViewController.swift in Sources */,
 				40A3117C1C574CD500A6DCAC /* ViewUserProfileController.swift in Sources */,
 				40A311461C56793A00A6DCAC /* AppDelegate.swift in Sources */,
-				40A311811C59B88E00A6DCAC /* TableViewController.swift in Sources */,
 				40A3114E1C56793A00A6DCAC /* CarFix.xcdatamodeld in Sources */,
 				40A311781C5682ED00A6DCAC /* LoadingViewController.swift in Sources */,
 				40A3117F1C59951D00A6DCAC /* UserCaseUpdateTableViewController.swift in Sources */,
