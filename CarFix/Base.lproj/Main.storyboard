@@ -727,7 +727,7 @@ We may provide links to other websites that we believe you will find useful. Oth
             </objects>
             <point key="canvasLocation" x="4325" y="2248"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Assignments-->
         <scene sceneID="CLm-R8-dgN">
             <objects>
                 <tableViewController id="ikT-UI-TVj" sceneMemberID="viewController">
@@ -737,7 +737,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="168" id="CxM-bg-qz3">
-                                <rect key="frame" x="0.0" y="28" width="600" height="168"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="168"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CxM-bg-qz3" id="EX8-1N-LZB">
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="167.5"/>
@@ -793,12 +793,19 @@ We may provide links to other websites that we believe you will find useful. Oth
                             <outlet property="delegate" destination="ikT-UI-TVj" id="xcU-Uc-9Io"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Assignments" id="KyI-tN-B8u">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="3Cu-D3-DTP">
+                            <connections>
+                                <segue destination="Wdc-Hb-fqM" kind="presentation" modalTransitionStyle="crossDissolve" id="Ql5-6j-JHA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m3m-Tw-xhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="3756"/>
+            <point key="canvasLocation" x="1778" y="4548"/>
         </scene>
-        <!--View Controller-->
+        <!--Your Profile-->
         <scene sceneID="JDL-kx-2xm">
             <objects>
                 <viewController id="b1O-3G-NbD" sceneMemberID="viewController">
@@ -846,7 +853,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                                 <rect key="frame" x="202" y="462" width="82" height="30"/>
                                 <state key="normal" title="Add Vehicle"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BHP-N9-ZC2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BHP-N9-ZC2">
                                 <rect key="frame" x="226" y="73" width="147" height="147"/>
                                 <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
@@ -879,12 +886,18 @@ We may provide links to other websites that we believe you will find useful. Oth
                             <constraint firstItem="HnW-al-am8" firstAttribute="leading" secondItem="X4l-G2-hJe" secondAttribute="leading" id="zPE-dy-ts2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="XJh-r4-n4H"/>
+                    <navigationItem key="navigationItem" title="Your Profile" id="Eew-nW-2D6">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="u6l-Iz-9op">
+                            <connections>
+                                <segue destination="Wdc-Hb-fqM" kind="presentation" modalTransitionStyle="crossDissolve" id="Mxn-2Y-cfP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xga-Hv-KgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2696" y="3756"/>
+            <point key="canvasLocation" x="2856" y="4576"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="NCR-lR-fll">
@@ -967,7 +980,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="b1O-3G-NbD" kind="presentation" modalTransitionStyle="crossDissolve" id="7K6-Gh-SDi"/>
+                                            <segue destination="NbF-U6-NCz" kind="presentation" modalTransitionStyle="crossDissolve" id="7K6-Gh-SDi"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="wN3-xl-zdv">
@@ -1000,7 +1013,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ikT-UI-TVj" kind="presentation" modalTransitionStyle="crossDissolve" id="Si4-cC-zfT"/>
+                                            <segue destination="njl-RN-7At" kind="presentation" modalTransitionStyle="crossDissolve" id="Si4-cC-zfT"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="iXF-OQ-OiQ">
@@ -1066,7 +1079,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="UA4-r4-MmJ" kind="presentation" id="gxe-51-80T"/>
+                                            <segue destination="RB4-8X-1Kh" kind="presentation" id="gxe-51-80T"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="J1h-Ln-LEd">
@@ -1102,7 +1115,7 @@ We may provide links to other websites that we believe you will find useful. Oth
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="QLr-oO-HSw" kind="presentation" modalTransitionStyle="crossDissolve" id="i4s-Rh-zdw"/>
+                                            <segue destination="SWN-sz-se4" kind="presentation" modalTransitionStyle="crossDissolve" id="i4s-Rh-zdw"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1841,12 +1854,12 @@ Interested parties looking for collaboration opportunities can contact us as we 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Lnl-Ia-kUL">
-                                <rect key="frame" x="32" y="20" width="548" height="519"/>
+                                <rect key="frame" x="32" y="64" width="548" height="475"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" header="YES"/>
                                 </accessibility>
-                                <string key="text">Break downs are inevitable most of the time. We have a 24/7 operating call centre catering to your distress call at any hour of the day. With Carfix as its new addition, our usability is enhanced, making it more advance and user friendly.
+                                <mutableString key="text">Break downs are inevitable most of the time. We have a 24/7 operating call centre catering to your distress call at any hour of the day. With Carfix as its new addition, our usability is enhanced, making it more advance and user friendly.
 
 Carfix took approximately six months to complete. In such a short period of time, our in-house developers created the webpage from scratch. With an application for both Apple and Android users, break downs will be less nerve-wrecking for all users.
 
@@ -1868,7 +1881,7 @@ Adding to the list of services, these features are provided to the consumers for
 
 Carfix prioritizes efficiency, reliability, and your safety when you are in need. So what more are you looking for?
 
-Interested parties looking for collaboration opportunities can contact us as we can also programme Carfix to do a tie-in with respected call centres of Insurance companies.</string>
+Interested parties looking for collaboration opportunities can contact us as we can also programme Carfix to do a tie-in with respected call centres of Insurance companies.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                             </textView>
@@ -1881,13 +1894,17 @@ Interested parties looking for collaboration opportunities can contact us as we 
                             <constraint firstItem="Lnl-Ia-kUL" firstAttribute="trailing" secondItem="dDt-rK-uud" secondAttribute="trailingMargin" id="pMB-9z-LF9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="P0q-tY-0si">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="ysP-MG-Fjd" userLabel="Back"/>
+                    <navigationItem key="navigationItem" title="About CarFix" id="P0q-tY-0si">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ysP-MG-Fjd" userLabel="Back">
+                            <connections>
+                                <segue destination="Wdc-Hb-fqM" kind="presentation" modalTransitionStyle="crossDissolve" id="uqW-Ac-csR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHf-J2-vzo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3405" y="3789"/>
+            <point key="canvasLocation" x="3769" y="4617"/>
         </scene>
         <!--Terms and Conditions-->
         <scene sceneID="g3o-po-VtF">
@@ -1956,13 +1973,90 @@ The agreement relating to your use of the services and supersedes any prior or c
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Terms and Conditions" id="otE-UP-FxC">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="Sog-s5-VFR"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Sog-s5-VFR">
+                            <connections>
+                                <segue destination="Wdc-Hb-fqM" kind="presentation" modalTransitionStyle="crossDissolve" id="NHD-IQ-4Di"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="leftBarButtonItem" title="Back" id="sQz-QO-yW9"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZX-kQ-WVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4083" y="3789"/>
+            <point key="canvasLocation" x="4639" y="4617"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JDf-n1-gZZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="njl-RN-7At" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MLb-hW-DZq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ikT-UI-TVj" kind="relationship" relationship="rootViewController" id="SAN-ZR-C3Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHr-br-H0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="3756"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SRS-l3-Dcr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NbF-U6-NCz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="XJh-r4-n4H"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t0D-bW-ufR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b1O-3G-NbD" kind="relationship" relationship="rootViewController" id="NFV-j6-19e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qe6-97-5OU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2856" y="3868"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hUC-BJ-BiN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RB4-8X-1Kh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i2A-cT-3w5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UA4-r4-MmJ" kind="relationship" relationship="rootViewController" id="sri-hX-dRJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wa-GC-XCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3769" y="3893"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lG9-Jk-Ac4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SWN-sz-se4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DJK-Sd-T81">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QLr-oO-HSw" kind="relationship" relationship="rootViewController" id="Vps-Yp-PPV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hcf-fN-Hvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4639" y="3893"/>
         </scene>
     </scenes>
     <resources>
@@ -1974,6 +2068,7 @@ The agreement relating to your use of the services and supersedes any prior or c
         <image name="ic_truck_check_in" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fxu-XC-qb7"/>
+        <segue reference="NHD-IQ-4Di"/>
+        <segue reference="xaW-6H-GZx"/>
     </inferredMetricsTieBreakers>
 </document>
