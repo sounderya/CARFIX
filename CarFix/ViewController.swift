@@ -14,7 +14,10 @@ class ViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
      
+        func locateSuccessPressed(sender: AnyObject) {
+        }
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+    
         view.addGestureRecognizer(tap)
         
         // Do any additional setup after loading the view, typically from a nib.
