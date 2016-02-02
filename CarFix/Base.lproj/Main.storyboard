@@ -501,8 +501,8 @@ We may provide links to other websites that we believe you will find useful. Oth
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAj-fY-15V">
-                                <rect key="frame" x="165" y="255" width="47" height="30"/>
-                                <state key="normal" title="Locate"/>
+                                <rect key="frame" x="124" y="255" width="130" height="30"/>
+                                <state key="normal" title="Locate-Policy valid"/>
                                 <connections>
                                     <segue destination="2wB-gO-xX6" kind="presentation" modalTransitionStyle="crossDissolve" id="LCw-TR-caa"/>
                                 </connections>
