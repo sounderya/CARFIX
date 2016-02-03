@@ -543,7 +543,7 @@ We may provide links to other websites that we believe you will find useful. Oth
         <!--Case Update View Controller-->
         <scene sceneID="8bG-ei-fcN">
             <objects>
-                <viewController id="GNm-dO-biO" userLabel="Case Update View Controller" customClass="Case" sceneMemberID="viewController">
+                <viewController id="GNm-dO-biO" userLabel="Case Update View Controller" customClass="CaseUdpateController" customModule="CarFix" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="STh-MM-fVd"/>
                         <viewControllerLayoutGuide type="bottom" id="jLG-eD-7tT"/>
